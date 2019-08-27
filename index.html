@@ -10,7 +10,7 @@
     <title>GregsList</title>
 </head>
 
-<body>
+<body class="bg-dark text-light">
     <div class="container-fluid">
         <header class="row">
             <div class="col-12">
@@ -55,6 +55,83 @@
                 <h3>Available Cars</h3>
                 <hr>
                 <div class="row" id="cars-cards">
+
+                </div>
+                <hr class="m-5 bg-light">
+            </div>
+            <div class="col-12">
+                <form class="d-flex" onsubmit='app.controllers.houseCtrl.addHouse(event)'>
+                    <div class="form-group">
+                        <label for="bedrooms">Bedrooms</label>
+                        <input type="number" class="form-control" id="bedrooms" placeholder="Bedrooms" name="bedrooms">
+                        <button class="btn btn-success" type="submit">Create</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="bathrooms">Bathrooms</label>
+                        <input type="number" class="form-control" id="bathrooms" placeholder="Bathrooms"
+                            name="bathrooms">
+                    </div>
+                    <div class="form-group">
+                        <label for="levels">Levels</label>
+                        <input type="number" class="form-control" id="levels" placeholder="Levels" name="levels">
+                    </div>
+                    <div class="form-group">
+                        <label for="img">Image Url</label>
+                        <input type="text" class="form-control" id="img" placeholder="Image Url..." name="imgUrl">
+                    </div>
+                    <div class="form-group">
+                        <label for="year">Year</label>
+                        <input type="number" class="form-control" id="year" placeholder="Year" name="year">
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price</label>
+                        <input type="number" class="form-control" id="price" placeholder="Price" name="price">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <input type="text" class="form-control" id="description" placeholder="Description"
+                            name="description"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12">
+                <h3>Available Houses</h3>
+                <hr>
+                <div class="row" id="house-cards">
+
+                </div>
+                <hr class="m-5 bg-light">
+            </div>
+            <div class="col-12">
+                <form class="d-flex" onsubmit='app.controllers.jobCtrl.addJob(event)'>
+                    <div class="form-group">
+                        <label for="jobTitle">Job Title</label>
+                        <input type="text" class="form-control" id="jobTitle" placeholder="Job Title" name="jobTitle">
+                        <button class="btn btn-success" type="submit">Create</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" class="form-control" id="company" placeholder="Company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="rate">Rate</label>
+                        <input type="number" class="form-control" id="rate" placeholder="Rate" name="rate">
+                    </div>
+                    <div class="form-group">
+                        <label for="hours">Hours</label>
+                        <input type="number" class="form-control" id="hours" placeholder="Hours" name="hours">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <input type="text" class="form-control" id="description" placeholder="Description"
+                            name="description"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12">
+                <h3>Available Jobs</h3>
+                <hr>
+                <div class="row" id="job-cards">
 
                 </div>
             </div>

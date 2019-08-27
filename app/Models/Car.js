@@ -12,14 +12,14 @@ export default class Car {
 
     get Template() {
         return `
-        <div class="col-3">
-            <div class="card">
+        <div class="col-3 mb-5">
+            <div class="card bg-info">
                 <img class="card-img-top" src="${this.imgUrl}" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">${this.year} - ${this.make} - ${this.model}</h5>
                     <p class="card-text">${this.description}</p>
                     <p><sm>${this.price}</sm></p>
-                    <button class="btn btn-info" onclick="app.controllers.carCtrl.bid('${this._id}')">Bid</button>
+                    <button class="btn btn-primary" onclick="app.controllers.carCtrl.bid('${this._id}')">Bid</button>
                     <button class="btn btn-danger" onclick="app.controllers.carCtrl.delete('${this._id}')">Delete Car</button>
                 </div >
             </div >
