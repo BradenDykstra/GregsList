@@ -30,8 +30,16 @@ export default class JobController {
   }
 
   delete(id) {
-    if (window.confirm("Are you sure?")) {
-      _js.deleteJob(id)
-    }
+    swal({
+      title: "Are you sure?",
+      text: "Do you really want to delete this job?",
+      icon: "warning",
+      buttons: ["No...", "Yeah!!!!!1111!!1!11!!!!"]
+    })
+      .then(del => {
+        if (del) {
+          _js.deleteJob(id)
+        }
+      })
   }
 }

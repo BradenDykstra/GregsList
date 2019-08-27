@@ -37,9 +37,17 @@ export default class CarController {
     }
 
     delete(id) {
-        if (window.confirm('Are you sure?')) {
-            _cs.deleteCar(id)
-        }
+        swal({
+            title: "Are you sure?",
+            text: "Do you really want to delete this car?",
+            icon: "warning",
+            buttons: ["No...", "Yeah!!!!!1111!!1!11!!!!"]
+        })
+            .then(del => {
+                if (del) {
+                    _cs.deleteCar(id)
+                }
+            })
     }
     bid(id) {
         _cs.bid(id)

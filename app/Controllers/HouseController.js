@@ -32,9 +32,17 @@ export default class HouseController {
   }
 
   delete(id) {
-    if (window.confirm("Are you sure?")) {
-      _hs.deleteHouse(id)
-    }
+    swal({
+      title: "Are you sure?",
+      text: "Do you really want to delete this house?",
+      icon: "warning",
+      buttons: ["No...", "Yeah!!!!!1111!!1!11!!!!"]
+    })
+      .then(del => {
+        if (del) {
+          _hs.deleteHouse(id)
+        }
+      })
   }
 
   bid(id) {
