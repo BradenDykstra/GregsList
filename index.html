@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css'>
     <title>GregsList</title>
 </head>
 
@@ -22,11 +23,12 @@
         </header>
         <main class="row">
             <div class="col-12">
+                <h3>Make a Car!</h3>
                 <form class="d-flex" onsubmit='app.controllers.carCtrl.addCar(event)'>
                     <div class="form-group">
                         <label for="make">Make</label>
                         <input type="text" class="form-control" id="make" placeholder="Make" name="make">
-                        <button class="btn btn-success" type="submit">Create</button>
+                        <button class="btn btn-success" type="submit">Create Car <i class="fa fa-car"></i></button>
                     </div>
                     <div class="form-group">
                         <label for="model">Model</label>
@@ -52,7 +54,7 @@
                 </form>
             </div>
             <div class="col-12">
-                <h3>Available Cars</h3>
+                <h3>Available Cars <i class="fa fa-car"></i></h3>
                 <hr>
                 <div class="row" id="cars-cards">
 
@@ -60,11 +62,12 @@
                 <hr class="m-5 bg-light">
             </div>
             <div class="col-12">
+                <h3>Make a House!</h3>
                 <form class="d-flex" onsubmit='app.controllers.houseCtrl.addHouse(event)'>
                     <div class="form-group">
                         <label for="bedrooms">Bedrooms</label>
                         <input type="number" class="form-control" id="bedrooms" placeholder="Bedrooms" name="bedrooms">
-                        <button class="btn btn-success" type="submit">Create</button>
+                        <button class="btn btn-success" type="submit">Create House <i class="fa fa-home"></i></button>
                     </div>
                     <div class="form-group">
                         <label for="bathrooms">Bathrooms</label>
@@ -95,7 +98,7 @@
                 </form>
             </div>
             <div class="col-12">
-                <h3>Available Houses</h3>
+                <h3>Available Houses <i class="fa fa-home"></i></h3>
                 <hr>
                 <div class="row" id="house-cards">
 
@@ -103,11 +106,13 @@
                 <hr class="m-5 bg-light">
             </div>
             <div class="col-12">
+                <h3>Make a Job!</h3>
                 <form class="d-flex" onsubmit='app.controllers.jobCtrl.addJob(event)'>
                     <div class="form-group">
                         <label for="jobTitle">Job Title</label>
                         <input type="text" class="form-control" id="jobTitle" placeholder="Job Title" name="jobTitle">
-                        <button class="btn btn-success" type="submit">Create</button>
+                        <button class="btn btn-success" type="submit">Create Job <i
+                                class="fa fa-briefcase"></i></button>
                     </div>
                     <div class="form-group">
                         <label for="company">Company</label>
@@ -129,7 +134,7 @@
                 </form>
             </div>
             <div class="col-12">
-                <h3>Available Jobs</h3>
+                <h3>Available Jobs <i class="fa fa-briefcase"></i></h3>
                 <hr>
                 <div class="row" id="job-cards">
 

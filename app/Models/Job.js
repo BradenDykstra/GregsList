@@ -18,7 +18,7 @@ export default class Job {
                     <p class="card-text"> ${this.description}</p>
                     <p><sm>$${this.rate}</sm></p>
                     <p><sm>${this.hours} hours</sm></p>
-                    <button class="btn btn-danger" onclick="app.controllers.jobCtrl.delete('${this._id}')">Delete Job</button>
+                    <button class="btn btn-danger" onclick="app.controllers.jobCtrl.delete('${this._id}')">Delete Job <i class="fa fa-briefcase"></i></button>
                 </div >
             </div >
         </div >

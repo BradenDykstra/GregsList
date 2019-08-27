@@ -20,8 +20,8 @@ export default class House {
                     <sm>Built in ${this.year}.</sm>
                     <p class="card-text"> ${this.description}</p>
                     <p><sm>$${this.price}</sm></p>
-                    <button class="btn btn-primary" onclick="app.controllers.houseCtrl.bid('${this._id}')">Bid</button>
-                    <button class="btn btn-danger" onclick="app.controllers.houseCtrl.delete('${this._id}')">Delete House</button>
+                    <button class="btn btn-primary" onclick="app.controllers.houseCtrl.bid('${this._id}')">Bid <i class="fas fa-dollar-sign"></i></button>
+                    <button class="btn btn-danger" onclick="app.controllers.houseCtrl.delete('${this._id}')">Delete House <i class="fa fa-home"></i></button>
                 </div >
             </div >
         </div >
