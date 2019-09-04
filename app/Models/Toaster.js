@@ -18,7 +18,7 @@ export default class Toaster {
                     <p class="card-text"> ${this.description}</p>
                     <p><sm>$${this.price}</sm></p>
                     <p><sm>Made in ${this.year}</sm></p>
-                    <button class="btn btn-danger" onclick="app.controllers.toasterCtrl.delete('${this._id}')">Delete Toaster <i class="fa fa-briefcase"></i></button>
+                    <button class="btn btn-danger" onclick="app.controllers.toasterCtrl.delete('${this._id}')">Delete Toaster <i class="fa fa-bread-slice"></i></button>
                 </div >
             </div >
         </div >
