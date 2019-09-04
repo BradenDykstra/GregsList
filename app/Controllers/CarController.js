@@ -37,6 +37,7 @@ export default class CarController {
     }
 
     delete(id) {
+        // @ts-ignore
         swal({
             title: "Are you sure?",
             text: "Do you really want to delete this car?",

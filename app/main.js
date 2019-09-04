@@ -1,6 +1,7 @@
 import CarController from "./Controllers/CarController.js";
 import HouseController from "./Controllers/HouseController.js";
 import JobController from "./Controllers/JobController.js";
+import ToasterController from "./Controllers/ToasterController.js";
 
 
 class App {
@@ -8,7 +9,8 @@ class App {
         this.controllers = {
             carCtrl: new CarController(),
             houseCtrl: new HouseController(),
-            jobCtrl: new JobController()
+            jobCtrl: new JobController(),
+            toasterCtrl: new ToasterController()
         }
     }
 }

@@ -139,6 +139,42 @@
                 <div class="row" id="job-cards">
 
                 </div>
+                <hr class="m-5 bg-light">
+            </div>
+            <div class="col-12">
+                <h3>Make a Toaster!</h3>
+                <form class="d-flex" onsubmit='app.controllers.toasterCtrl.addToaster(event)'>
+                    <div class="form-group">
+                        <label for="Slots">Slots</label>
+                        <input type="number" class="form-control" id="Slots" placeholder="Slots" name="slots">
+                        <button class="btn btn-success" type="submit">Create Toaster <i
+                                class="fa fa-briefcase"></i></button>
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price</label>
+                        <input type="number" class="form-control" id="price" placeholder="Price" name="price">
+                    </div>
+                    <div class="form-group">
+                        <label for="year">Year</label>
+                        <input type="number" class="form-control" id="year" placeholder="Year" name="year">
+                    </div>
+                    <div class="form-group">
+                        <label for="imgUrl">Image Url</label>
+                        <input type="text" class="form-control" id="imgUrl" placeholder="imgUrl" name="imgUrl">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <input type="text" class="form-control" id="description" placeholder="Description"
+                            name="description"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12">
+                <h3>Available Toasters <i class="fa fa-briefcase"></i></h3>
+                <hr>
+                <div class="row" id="toaster-cards">
+
+                </div>
             </div>
         </main>
     </div>
